@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Merry Xmas Generator | Coding week</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Livvic:ital,wght@1,600&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <header>
+                <h1>Merry Xmas Generator</h1>
+            </header>
+
+            <main>
+                <div class="preview">
+                    <img id="preview-image" src="./images/img_1.png" alt="Immagine 1">
+                    <img id="preview-text" src="./images/txt_1.png" alt="Testo 1">
+                    <div class="preview-sender">Augurissimi</div>
+                </div>
+                <div class="controls">
+                    <div class="actions">
+                        <button id="change-image" class="button primary-button">
+                            <img src="./images/icon-image.png" alt="Cambia Immagine">
+                        </button>
+                        <button id="change-text" class="button primary-button">
+                            <img src="./images/icon-text.png" alt="Cambia testo">
+                        </button>
+                    </div>
+
+                    <input class="sender" type="text" maxlength="20" placeholder="tuo nome">
+
+                    <button id="download" class="button button-secondary">
+                        <img src="./images/icon-download.png" alt="Download image">
+                    </button>
+                </div>
+            </main>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html-to-image/1.10.9/html-to-image.min.js" integrity="sha512-IetiMzopsrb75HtZydIM8zRv1mlSmV42P0iZVT4sPHxDnhM0I9O8/75bFqlfWoCKTnDB+pFqvoQrlnkgUeShaA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="./script.js"></script>
+    </body>
+</html>
